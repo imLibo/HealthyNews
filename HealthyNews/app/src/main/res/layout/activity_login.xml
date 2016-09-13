@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        style="@style/RelativeLayout_Top_Cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edittext_login_username"
+            style="@style/EdittText_normal"
+            android:layout_marginTop="10dp"
+            android:hint="请输入账号" />
+
+        <EditText
+            android:id="@+id/edittext_login_password"
+            style="@style/EdittText_normal"
+            android:layout_below="@id/edittext_login_username"
+            android:layout_marginTop="10dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/textview_login_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/edittext_login_password"
+            />
+
+        <Button
+            android:id="@+id/button_login_login"
+            style="@style/Button_normal"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/textview_login_regist"
+            android:layout_marginBottom="10dp"
+            android:text="登录" />
+    </RelativeLayout>
+
+</LinearLayout>

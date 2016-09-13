@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:layout_weight="1"
+    android:id="@+id/linearlayout_fourth_unlogin"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/textview_fouth_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:text="当前未登录，点击登录后查看您的收藏"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

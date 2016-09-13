@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xieyao.healthynews.fragment.FourthFragment">
+
+    <com.xieyao.healthynews.customeview.ReScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@mipmap/navigation_header_back">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageView_usericon"
+                    android:layout_width="96dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="96dp"
+                    android:src="@mipmap/icon_person"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimary"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/imageView_fourth_edit"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/image_baclk_circle_seletor_dialog"
+                    android:src="@mipmap/ic_edit_white_24dp"
+                    />
+            </FrameLayout>
+
+            <LinearLayout style="@style/linearlayout_style_of_diamonds">
+
+                <include layout="@layout/layout_primary_diamonds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="个人信息" />
+            </LinearLayout>
+
+            <RelativeLayout style="@style/relativelayout_style_of_horizontal">
+
+                <TextView
+                    android:id="@+id/textview_fourth_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="昵称：" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout style="@style/relativelayout_style_of_horizontal">
+
+                <TextView
+                    android:id="@+id/textview_fourth_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="手机号码：" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <RelativeLayout style="@style/relativelayout_style_of_horizontal">
+
+                <TextView
+                    android:id="@+id/textview_fourth_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="性别：" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal" />
+
+            <Button
+                android:id="@+id/button_selfdetail_unlogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ripple_red"
+                android:text="注销登录"
+                android:visibility="gone"
+                android:textColor="@color/material_white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </com.xieyao.healthynews.customeview.ReScrollView>
+
+</LinearLayout>

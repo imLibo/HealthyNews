@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bottom_colors">
+        <item>@color/bottom_color_1</item>
+        <item>@color/bottom_color_2</item>
+        <item>@color/bottom_color_3</item>
+        <item>@color/bottom_color_4</item>
+    </array>
+</resources>

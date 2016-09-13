@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_changeicon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/ripple_relativeitem"
+        >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改头像"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

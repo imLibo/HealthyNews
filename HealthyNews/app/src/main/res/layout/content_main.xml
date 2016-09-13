@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <com.gigamole.library.NavigationTabBar
+        android:id="@+id/tabbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:ntb_animation_duration="100"
+        app:ntb_active_color="@color/colorPrimary"
+        app:ntb_inactive_color="#ffffff"
+        app:ntb_title_mode="all"
+        android:background="#000000"
+        app:ntb_titled="true"
+        />
+
+</LinearLayout>

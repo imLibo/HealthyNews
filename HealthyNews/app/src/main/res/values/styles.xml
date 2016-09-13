@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:actionBarSize">55dp</item>
+        <item name="android:divider">@color/divider</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+
+    <style name="LinearlayoutStyleOfListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="Button_normal">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/button_seletor_v19</item>
+    </style>
+
+    <style name="EdittText_normal">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/edit_seletor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="RelativeLayout_Top_Cardview">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="dialog_loading" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_shape</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="actionMenuTextColor">@color/material_white</item>
+        <item name="android:textColorPrimary">@color/material_white</item>
+        <item name="android:textColorSecondary">@color/material_white</item>
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="EdittextStyleOfCanClear">
+        <item name="android:background">@drawable/edit_seletor</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_height">@dimen/edittext_height</item>
+        <item name="android:textSize">@dimen/edittext_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="relativelayout_style_of_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_toolbar</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ripple_relativeitem</item>
+    </style>
+
+    <style name="linearlayout_style_of_diamonds">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edittext_height</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@drawable/ripple_button</item>
+        <item name="android:layout_height">@dimen/edittext_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/material_white</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@mipmap/back_main</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="dialog_restsuccess" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_shape_reset</item>
+    </style>
+
+    <style name="dialogActivity" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+        <item name="android:windowBackground">@drawable/dialog_activity_shape</item>
+    </style>
+    <style name="textAppearanceBlackLarge" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textsize_Large</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="textAppearanceBlackNormal" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/textsize_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+</resources>

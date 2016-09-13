@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/ripple_relativeitem"
+    >
+
+    <TextView
+        android:id="@+id/textview_item_yaopinfenlei"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black_text"
+        android:gravity="center"
+        android:maxWidth="60dp"
+        android:textSize="14sp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

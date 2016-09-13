@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#32BC9B</color>
+    <color name="colorPrimaryDark">#36A387</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bottom_color_1">#32BC9B</color>
+    <color name="bottom_color_2">#ED5D56</color>
+    <color name="bottom_color_3">#A2C5BF</color>
+    <color name="bottom_color_4">#ED5D56</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="material_white">#FFFFFF</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="backgroundColor">#F0F0F0</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#ae000000</color>
+
+    <color name="red">#ef5350</color>
+
+    <color name="red_dark">#ef0000</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="google_red">#EA4335</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <color name="material_red">#ffF44336</color>
+    <color name="material_green">#ff4CAF50</color>
+    <color name="material_blue">#ff03A9F4</color>
+    <color name="material_yellow">#ffFFEB3B</color>
+    <color name="back_black">#ae000000</color>
+    <color name="grey_shen">#e0e0e0</color>
+    <color name="btn_press_noalpha">#00796b</color>
+    <color name="grey_shen_add1">#bdbdbd</color>
+    <color name="btn_mormal_noalpha">#009688</color>
+
+</resources>

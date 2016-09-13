@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_dialog_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_targetdetail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="修改个人信息"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_edit_nickname"
+                style="@style/EdittText_normal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="昵称" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton_man_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton_women_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_edit_change"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_toolbar"
+                style="@style/button_style"
+                android:text="确认修改"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/imagebutton_edit_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/image_baclk_circle_seletor_dialog"
+            android:src="@mipmap/ic_clear_white_24dp" />
+    </FrameLayout>
+
+</RelativeLayout>

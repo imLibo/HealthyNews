@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xieyao.healthynews.fragment.ThirdFragment">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_fourth_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        >
+        <ImageButton
+            android:id="@+id/imagebutton_fourth_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_button"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_clear_white_36dp"
+            />
+        <ImageButton
+            android:id="@+id/imagebutton_fourth_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_button"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_done_white_36dp"
+            />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_thirdfragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar"
+        android:background="?attr/colorPrimary"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/material_white"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/material_white"
+        app:tabTextColor="@color/material_grey_300" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_thirdfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

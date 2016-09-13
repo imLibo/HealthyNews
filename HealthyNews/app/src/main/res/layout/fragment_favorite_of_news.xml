@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_unlogin" />
+    <include layout="@layout/layout_empty"/>
+    <com.xieyao.healthynews.loadmore.MaterialRefreshLayout
+
+        android:id="@+id/refresh_favorite_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isLoadMore="true"
+        app:overlay="true"
+        app:progress_colors="@array/material_colors"
+        app:progress_size_type="normal"
+        app:wave_color="#90ffffff"
+        app:wave_height_type="normal"
+        app:wave_show="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_favorite_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.xieyao.healthynews.loadmore.MaterialRefreshLayout>
+
+</LinearLayout>
+
+

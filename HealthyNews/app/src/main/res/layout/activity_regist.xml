@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <com.xieyao.healthynews.customeview.ReScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/relativeLayout"
+            style="@style/RelativeLayout_Top_Cardview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageview_regist_usericon"
+                android:layout_width="96dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="96dp"
+                android:src="@mipmap/icon_person"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="选择头像" />
+
+            <EditText
+                android:id="@+id/edittext_regist_username"
+                style="@style/EdittText_normal"
+                android:layout_marginTop="10dp"
+                android:hint="注册手机号"
+                android:inputType="phone" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+            <!--<EditText-->
+            <!--android:id="@+id/edittext_regist_smscode"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--style="@style/EdittText_normal"-->
+            <!--android:hint="请输入短信验证码"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+            <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:text="发送短信验证码"-->
+            <!--android:id="@+id/button_regist_sendsms"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@drawable/ripple_button"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <EditText
+                android:id="@+id/edittext_regist_nickname"
+                style="@style/EdittText_normal"
+                android:layout_marginTop="10dp"
+                android:hint="昵称" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_regist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radiobutton_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edittext_regist_password"
+                style="@style/EdittText_normal"
+                android:layout_below="@id/edittext_login_username"
+                android:layout_marginTop="10dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edittext_regist_confirm"
+                style="@style/EdittText_normal"
+                android:layout_below="@id/edittext_login_username"
+                android:layout_marginTop="10dp"
+                android:hint="再次输入密码"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button_regist"
+                style="@style/Button_normal"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/textview_login_regist"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="注    册" />
+        </LinearLayout>
+    </com.xieyao.healthynews.customeview.ReScrollView>
+</LinearLayout>

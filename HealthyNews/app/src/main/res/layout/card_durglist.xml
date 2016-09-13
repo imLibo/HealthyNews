@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/backgroundColor"
+    app:cardCornerRadius="10dp"
+    android:clickable="true"
+    app:cardElevation="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout style="@style/LinearlayoutStyleOfListItem">
+
+            <TextView
+                android:id="@+id/textview_druglist_name"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black_text"
+                android:layout_height="@dimen/height_druglistitem"
+                android:text="药品名称" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:id="@+id/imageview_durglist"
+            android:layout_gravity="left"
+            />
+
+        <include layout="@layout/line_horizontal" />
+
+        <LinearLayout style="@style/LinearlayoutStyleOfListItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_druglistitem"
+                android:gravity="center_vertical"
+                android:text="生产企业：" />
+            <include layout="@layout/line_virtural"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textview_druglist_scqy"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_druglistitem"
+                android:gravity="center_vertical"
+                android:text="生产" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal" />
+
+        <LinearLayout style="@style/LinearlayoutStyleOfListItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_druglistitem"
+                android:gravity="center_vertical"
+                android:text="规格型号：" />
+            <include layout="@layout/line_virtural"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textview_druglist_ggxh"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_druglistitem"
+                android:gravity="center_vertical"
+                android:text="生产" />
+        </LinearLayout>
+
+        <include layout="@layout/line_horizontal" />
+
+        <LinearLayout style="@style/LinearlayoutStyleOfListItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_druglistitem"
+                android:gravity="center_vertical"
+                android:text="参考价格：" />
+            <include layout="@layout/line_virtural"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textview_druglist_ckjg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_druglistitem"
+                android:gravity="center_vertical"
+                android:text="生产" />
+        </LinearLayout>
+        <include layout="@layout/line_horizontal"/>
+        <LinearLayout style="@style/LinearlayoutStyleOfListItem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/height_druglistitem"
+                android:text="用法用量：" />
+            <include layout="@layout/line_virtural"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textview_druglist_yfyl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="生产" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

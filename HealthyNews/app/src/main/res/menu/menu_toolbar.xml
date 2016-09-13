@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.imlibo.selfmanager.com.imlibo.selfmanager.activity.NewSelfManageItemsActivity"
+    >
+    <item
+        android:id="@+id/item_menu_favorite"
+        android:icon="@mipmap/favorite"
+        android:orderInCategory="90"
+        android:showAsAction="ifRoom"
+        android:title="收藏"/>
+    <item
+        android:id="@+id/item_menu_share"
+        android:icon="@mipmap/ic_share_white_36dp"
+        android:orderInCategory="80"
+        android:showAsAction="ifRoom"
+        android:title="分享"/>
+</menu>

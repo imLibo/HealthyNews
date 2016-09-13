@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/ripple_relativeitem"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/textview_item_favorite_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_text"
+            android:ellipsize="end"
+            android:text="国家税务局与中国国际贸易促进委员会签署了什么什么什么什么鬼的协议国家税务局与中国国际贸易促进委员会签署了什么什么什么什么鬼的协议"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/textview_item_favorite_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016年1月20日"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageview_item_favorite"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerInside"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/radiobutton_favorite_delete"
+        android:visibility="gone"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
